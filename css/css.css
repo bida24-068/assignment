@@ -546,8 +546,8 @@ hr {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: url("/imgs/alain-bonnardeaux-xTakmF8KwK8-unsplash.jpg") no-repeat
-    center center/cover;
+  background: url("../imgs/alain-bonnardeaux-xTakmF8KwK8-unsplash.jpg")
+    no-repeat center center/cover;
   color: white;
   text-align: center;
   position: relative;
