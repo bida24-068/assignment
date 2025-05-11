@@ -20,7 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   box-sizing: border-box;
   padding-left: 5rem;
   padding-right: 5rem;
@@ -137,6 +137,14 @@ body {
   border-radius: 50%;
   overflow: hidden;
   margin-left: -1.5rem;
+  justify-content: flex-start;
+}
+
+.tesimonial_img_container1 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .tesimonial_images {
@@ -147,7 +155,15 @@ body {
   width: 60px;
 }
 
-.value-attributes {
+.hero-section-rating {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hero-rating {
+  align-items: center;
 }
 
 /* counter */
@@ -246,9 +262,9 @@ body {
 }
 
 .testimonial-img {
-  width: 60px;
-  height: auto;
-  border-radius: 3px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
   margin-bottom: 1rem;
 }
 
@@ -261,6 +277,10 @@ body {
   font-size: 0.9rem;
   font-weight: bold;
   color: #333;
+}
+
+i.fa-solid fa-star {
+  color: #ff9900;
 }
 
 /* timeline section */
@@ -473,6 +493,7 @@ hr {
   padding: 4rem 2rem;
   background-color: #f4f4f4;
   text-align: center;
+  margin-top: 100px;
 }
 
 .blog-section h2 {
@@ -525,8 +546,8 @@ hr {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: url("/website2/imgs/hero-background.jpg") no-repeat center
-    center/cover;
+  background: url("/imgs/alain-bonnardeaux-xTakmF8KwK8-unsplash.jpg") no-repeat
+    center center/cover;
   color: white;
   text-align: center;
   position: relative;
@@ -534,6 +555,11 @@ hr {
 
 .hero-content {
   max-width: 600px;
+  color: white;
+  text-align: center;
+  padding-top: 20vh;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-content h1 {
@@ -598,6 +624,7 @@ hr {
   padding: 4rem 2rem;
   background-color: #f4f4f4;
   text-align: left;
+  margin-top: 100px;
 }
 
 .privacy-policy-content {
@@ -647,10 +674,15 @@ hr {
   margin-bottom: 1rem;
 }
 
-.contact-content p {
+.contactus-h2 {
+  color: #333;
+}
+
+.contactus-p {
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 2rem;
+  color: #333;
 }
 
 .contact-info {
@@ -682,6 +714,7 @@ hr {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: bold;
+  color: #333;
 }
 
 .contact-form input,
@@ -729,4 +762,107 @@ hr {
 
 .back-to-top:hover {
   background-color: #e68a00;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+  .home_hero-section {
+    flex-direction: column;
+    height: auto;
+    padding-top: 80px;
+  }
+
+  .nav-bar .nav-links {
+    display: none; /* Hide the navigation links on mobile */
+  }
+
+  .home_hero-content {
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero_section-img {
+    width: fill;
+    height: auto;
+    box-shadow: none;
+  }
+}
+
+/* form */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px 40px;
+  background-color: #3f3f3f;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-top: 200px;
+}
+
+.form-step {
+  display: none;
+}
+
+.form-step-active {
+  display: block;
+}
+
+.form-h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.next-step {
+  padding: 10px 20px;
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3;
+  background-color: 0.3s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: #e68a00;
+}
+
+button.prev-step {
+  background-color: #ccc;
+}
+
+button.prev-step:hover {
+  background-color: #bbb;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
 }
