@@ -24,6 +24,19 @@ summary {
   display: block;
 }
 
+.w-webflow-badge,
+.w-webflow-badge > img {
+  visibility: hidden;
+}
+
+.w-webflow-badge {
+  visibility: hidden;
+}
+
+.w-webflow-badge > img {
+  visibility: hidden;
+}
+
 audio,
 canvas,
 progress,

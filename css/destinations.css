@@ -343,6 +343,19 @@ h6 {
   font-weight: bold;
 }
 
+.w-webflow-badge,
+.w-webflow-badge > img {
+  visibility: hidden;
+}
+
+.w-webflow-badge {
+  visibility: hidden;
+}
+
+.w-webflow-badge > img {
+  visibility: hidden;
+}
+
 h1 {
   margin-top: 20px;
   font-size: 38px;

@@ -333,6 +333,19 @@ pre.w-code-block code {
   display: contents;
 }
 
+.w-webflow-badge,
+.w-webflow-badge > img {
+  visibility: hidden;
+}
+
+.w-webflow-badge {
+  visibility: hidden;
+}
+
+.w-webflow-badge > img {
+  visibility: hidden;
+}
+
 h1,
 h2,
 h3,

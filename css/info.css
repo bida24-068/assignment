@@ -333,6 +333,19 @@ pre.w-code-block code {
   display: contents;
 }
 
+.w-webflow-badge,
+.w-webflow-badge > img {
+  visibility: hidden;
+}
+
+.w-webflow-badge {
+  visibility: hidden;
+}
+
+.w-webflow-badge > img {
+  visibility: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -1199,19 +1212,6 @@ textarea.w-select {
   left: 0;
   right: 0;
   overflow: hidden;
-}
-
-.w-webflow-badge,
-.w-webflow-badge > img {
-  visibility: hidden;
-}
-
-.w-webflow-badge {
-  visibility: hidden;
-}
-
-.w-webflow-badge > img {
-  visibility: hidden;
 }
 
 .w-slide {
@@ -2581,10 +2581,11 @@ textarea.w-select {
 }
 
 .heading-5 {
-  color: #fefaf3;
+  color: #333;
   text-align: center;
+  max-width: 32%;
   font-family: Montserrat, sans-serif;
-  position: absolute;
+  position: static;
   left: 0;
   right: 0;
 }
@@ -2801,6 +2802,130 @@ textarea.w-select {
   display: flex;
 }
 
+.utility-page-wrap {
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  max-height: 100%;
+  display: flex;
+}
+
+.utility-page-content {
+  text-align: center;
+  flex-direction: column;
+  width: 260px;
+  display: flex;
+}
+
+.utility-page-form {
+  flex-direction: column;
+  align-items: stretch;
+  display: flex;
+}
+
+.team-slider {
+  background-color: #fff;
+  border-bottom: 1px solid #e4ebf3;
+  padding: 80px 30px;
+  font-family: Montserrat, sans-serif;
+  position: relative;
+}
+
+.container-4 {
+  width: 100%;
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centered-heading-2 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.centered-subheading {
+  text-align: center;
+  max-width: 530px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-slider-wrapper {
+  background-color: #0000;
+  height: auto;
+  margin-top: 50px;
+}
+
+.team-slide-wrapper {
+  width: 30%;
+  margin-right: 5%;
+}
+
+.team-block {
+  background-color: #fff;
+  padding-bottom: 24px;
+}
+
+.team-member-image-two {
+  margin-bottom: 18px;
+}
+
+.team-block-info {
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: flex;
+}
+
+.team-member-name-two {
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.team-member-text {
+  margin-bottom: 20px;
+}
+
+.text-link-arrow-2 {
+  color: #1a1b1f;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  display: flex;
+}
+
+.arrow-embed-2 {
+  margin-left: 2px;
+  display: flex;
+}
+
+.team-slider-arrow {
+  display: none;
+}
+
+.team-slider-nav {
+  margin-top: 24px;
+  font-size: 10px;
+  position: static;
+  bottom: -60px;
+}
+
+.section {
+  text-align: center;
+  background-color: #fff;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  font-family: Montserrat, sans-serif;
+  display: flex;
+}
+
 @media screen and (max-width: 991px) {
   .menu-button {
     background-color: #fdf9f3;
@@ -2895,6 +3020,15 @@ textarea.w-select {
 
   .heading-style-h2 {
     font-size: 2.75rem;
+  }
+
+  .container-4 {
+    max-width: 728px;
+  }
+
+  .team-slide-wrapper {
+    width: 47%;
+    margin-right: 6%;
   }
 }
 
@@ -3008,6 +3142,10 @@ textarea.w-select {
   .heading-style-h2 {
     font-size: 2.25rem;
   }
+
+  .team-slider {
+    padding: 60px 15px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -3062,11 +3200,26 @@ textarea.w-select {
     margin-left: 0;
     margin-right: 0;
   }
+
+  .container-4 {
+    max-width: none;
+  }
+
+  .centered-heading-2 {
+    margin-bottom: 24px;
+  }
+
+  .team-slide-wrapper {
+    width: 100%;
+    margin-right: 0%;
+  }
 }
 
 #w-node-_2aee6e88-b013-9f3a-bedd-da24866c87b6-a424273f,
 #w-node-_2aee6e88-b013-9f3a-bedd-da24866c87c3-a424273f,
 #w-node-_34a7cd66-e023-1d29-0955-8b77865d6e35-3d23c6d1,
-#w-node-_34a7cd66-e023-1d29-0955-8b77865d6e42-3d23c6d1 {
+#w-node-_34a7cd66-e023-1d29-0955-8b77865d6e42-3d23c6d1,
+#w-node-_48b21a9b-9797-c1a4-7380-56bcf411b128-2f107edb,
+#w-node-_48b21a9b-9797-c1a4-7380-56bcf411b135-2f107edb {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
